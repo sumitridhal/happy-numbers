@@ -9,6 +9,17 @@ The first step to creating pseudo code to evaluate happy numbers is to remind ou
 
 Let's put these steps into a simple set of instructions, or pseudo code, to evaluate whether or not one number is happy or unhappy:
 
+1. Dog
+    1. German Shepherd
+    2. Belgian Shepherd
+        1. Malinois
+        2. Groenendael
+        3. Tervuren
+2. Cat
+    1. Siberian
+    2. Siamese
+
+
 1. First, see if our number has more than one digit.
     1. If yes, split the number into single digits and multiply each digit by itself. Then add up the multiplication results into a single sum, or total.
     2. If no, multiply the number by itself to get a total.
