@@ -55,3 +55,16 @@ happy =  filter(lambda x : is_happy(x), range(int(sys.argv[1])))
 for h in happy:
 	print h
 ```
+
+## Haskell 
+
+```
+isHappy :: (Read a, Integral a) => a -> Bool
+isHappy = f [] where
+    f _  1 = True
+    f xs n = notElem n xs && f (n:xs) (sum . map (^ 2) $ digits n)
+    digits = map (read . return) . show
+
+happyUpto :: (Read a, Integral a) => a -> [a]
+happyUpto n = filter isHappy [1..n - 1]
+```
