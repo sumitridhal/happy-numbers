@@ -9,17 +9,6 @@ The first step to creating pseudo code to evaluate happy numbers is to remind ou
 
 Let's put these steps into a simple set of instructions, or pseudo code, to evaluate whether or not one number is happy or unhappy:
 
-1. Dog
-    1. German Shepherd
-    2. Belgian Shepherd
-        1. Malinois
-        2. Groenendael
-        3. Tervuren
-2. Cat
-    1. Siberian
-    2. Siamese
-
-
 1. First, see if our number has more than one digit.
     1. If yes, split the number into single digits and multiply each digit by itself. Then add up the multiplication results into a single sum, or total.
     2. If no, multiply the number by itself to get a total.
@@ -37,13 +26,14 @@ Here's how we could adapt our pseudo code to automate the testing of many number
 1. See if the current number is 1.
     1. If yes, we're starting the evaluation process.
     2. If no, the current number is what we set in Step 4 below, the next number to evaluate.
-See if our current number has more than one digit.
-If yes, split the current number into single digits and multiply each digit by itself. Then add up the multiplication results into a single sum, or total.
-If no, multiply the number by itself to get a total.
-See if the total, from either Step 2 operation, is a number in the list that indicates it is an unhappy number (4, 16, 37, 58, 89, 145, 42, 20).
-If yes, our current number is an unhappy number. Stop evaluating. Add the current number to our list of unhappy numbers.
-If no, repeat this multi-digit evaluation process in Step 1 until the result is 1. When the result is 1, we confirm our current number is a happy number. Add the current number to the list of happy numbers.
-See if the current number is less than or equal to 1000, the limit and last number to evaluate.
-If yes, increase our current number by one. Repeat steps 1, 2, and 3.
-If no, display our list of happy numbers and unhappy numbers.
+2. See if our current number has more than one digit.
+    1. If yes, split the current number into single digits and multiply each digit by itself. Then add up the multiplication results into a single sum, or total.
+    2. If no, multiply the number by itself to get a total.
+3. See if the total, from either Step 2 operation, is a number in the list that indicates it is an unhappy number (4, 16, 37, 58, 89, 145, 42, 20).
+    1. If yes, our current number is an unhappy number. Stop evaluating. Add the current number to our list of unhappy numbers.
+    2. If no, repeat this multi-digit evaluation process in Step 1 until the result is 1. When the result is 1, we confirm our current number is a happy number. Add the current number to the list of happy numbers.
+4. See if the current number is less than or equal to 1000, the limit and last number to evaluate.
+    1. If yes, increase our current number by one. Repeat steps 1, 2, and 3.
+    2. If no, display our list of happy numbers and unhappy numbers.
+    
 Pseudo code can take many forms, from simple to more complex. The goal of pseudo code is to work through a problem on paper or onscreen before taking time to code. You can find problems earlier which means less buggy code. Plus pseudo code makes more clear the connection between actual coding and math problems like Happy Numbers.
