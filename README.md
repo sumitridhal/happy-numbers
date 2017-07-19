@@ -10,11 +10,11 @@ The first step to creating pseudo code to evaluate happy numbers is to remind ou
 Let's put these steps into a simple set of instructions, or pseudo code, to evaluate whether or not one number is happy or unhappy:
 
 1. First, see if our number has more than one digit.
-  a. If yes, split the number into single digits and multiply each digit by itself. Then add up the multiplication results into a single sum, or total.
-  b. If no, multiply the number by itself to get a total.
+  ..a. If yes, split the number into single digits and multiply each digit by itself. Then add up the multiplication results into a single sum, or total.
+  ..b. If no, multiply the number by itself to get a total.
 2. See if the total, from either Step 2 operation, is a number in the list of numbers that indicates it is an unhappy number (4, 16, 37, 58, 89, 145, 42, 20).
-  a. If yes, our initial number is an unhappy number. Stop evaluating.
-  b. If no, repeat this multi-digit evaluation process in Step 1 until the result is 1.
+  ..a. If yes, our initial number is an unhappy number. Stop evaluating.
+  ..b. If no, repeat this multi-digit evaluation process in Step 1 until the result is 1.
 3. When the result is 1, we confirm it is a happy number.
 
 Notice how we use conditional “if” statements to determine the next step in our process. Conditional statements are very common in software programming.
