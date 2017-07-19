@@ -10,11 +10,11 @@ The first step to creating pseudo code to evaluate happy numbers is to remind ou
 Let's put these steps into a simple set of instructions, or pseudo code, to evaluate whether or not one number is happy or unhappy:
 
 1. First, see if our number has more than one digit.
-..1. If yes, split the number into single digits and multiply each digit by itself. Then add up the multiplication results into a single sum, or total.
-..2. If no, multiply the number by itself to get a total.
+    1. If yes, split the number into single digits and multiply each digit by itself. Then add up the multiplication results into a single sum, or total.
+    2. If no, multiply the number by itself to get a total.
 2. See if the total, from either Step 2 operation, is a number in the list of numbers that indicates it is an unhappy number (4, 16, 37, 58, 89, 145, 42, 20).
-..1. If yes, our initial number is an unhappy number. Stop evaluating.
-..2. If no, repeat this multi-digit evaluation process in Step 1 until the result is 1.
+    1. If yes, our initial number is an unhappy number. Stop evaluating.
+    2. If no, repeat this multi-digit evaluation process in Step 1 until the result is 1.
 3. When the result is 1, we confirm it is a happy number.
 
 Notice how we use conditional “if” statements to determine the next step in our process. Conditional statements are very common in software programming.
@@ -24,8 +24,8 @@ Let's make this slightly more complicated. Let's imagine we want to process all 
 Here's how we could adapt our pseudo code to automate the testing of many numbers to find out which are happy and unhappy. We'll start with a current number set to 1 and evaluate numbers up to 1000:
 
 1. See if the current number is 1.
-  a. If yes, we're starting the evaluation process.
-  b. If no, the current number is what we set in Step 4 below, the next number to evaluate.
+    1. If yes, we're starting the evaluation process.
+    2. If no, the current number is what we set in Step 4 below, the next number to evaluate.
 See if our current number has more than one digit.
 If yes, split the current number into single digits and multiply each digit by itself. Then add up the multiplication results into a single sum, or total.
 If no, multiply the number by itself to get a total.
